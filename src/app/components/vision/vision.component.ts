@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-vision',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./vision.component.scss']
 })
 export class VisionComponent {
-
+  faEye = faEye
 }

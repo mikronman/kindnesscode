@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faBullseye } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-mission',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./mission.component.scss']
 })
 export class MissionComponent {
-
+  faBullseye = faBullseye
 }

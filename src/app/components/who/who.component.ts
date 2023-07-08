@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCommentsDollar } from '@fortawesome/free-solid-svg-icons';
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-who',
@@ -7,5 +7,5 @@ import { faCommentsDollar } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./who.component.scss']
 })
 export class WhoComponent {
-
+  faUsers = faUsers
 }

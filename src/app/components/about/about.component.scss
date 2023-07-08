@@ -1,6 +1,7 @@
 .about {
     padding: 2em;
     text-align:center;
+    color:#373737;
   }
   
   .quadrant {
@@ -17,7 +18,11 @@
   .column {
     flex: 1;
     position: relative;
-    padding: 2em;
+    padding: 5em;
+    &:hover {
+        cursor:pointer;
+        background-color:#fafafa;
+    }
   }
   
   .border-right {
