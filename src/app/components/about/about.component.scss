@@ -2,30 +2,36 @@
     padding: 2em;
     text-align:center;
     color:#373737;
+    @media (max-width: 600px) {
+      padding:0;
+      border-bottom:1px solid #d3d3d3;
+      margin-bottom:5em;
+    }
   }
-  
-  .quadrant {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+
+  .top-row {
+    border-bottom:1px solid #d3d3d3;
+    @media (max-width: 600px) {
+      border:none;
+    }
   }
-  
-  .row {
-    flex: 1;
-    display: flex;
+
+  .who, .mission {
+    border-right:1px solid #d3d3d3;
+    @media (max-width: 600px) {
+      border:none;
+    }
   }
-  
-  .column {
-    flex: 1;
-    position: relative;
-    padding: 5em;
+
+  .item {
+    padding:5em;
     &:hover {
-        cursor:pointer;
-        background-color:#fafafa;
+      cursor:pointer;
+      background-color:#fafafa;
+    }
+    @media (max-width: 600px) {
+      padding:3em;
     }
   }
   
-  .border-right {
-    border-right:solid 1px rgba(0,0,0,.12);
-  }
   

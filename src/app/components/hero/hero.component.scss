@@ -28,6 +28,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 600px) {
+      padding:2em;
+      max-width:90%;
+      h1 {
+        font-size:1.5em!important;
+      }
+    }
   }
   
   .message-container {
@@ -47,10 +54,14 @@
     font-size:2em;
     font-weight:lighter;
     line-height:1.25em;
+    @media (max-width: 600px) {
+      font-size:1.5em;
+    }
   }
 
   img {
     margin-bottom:1em;
     opacity:0.80;
     width:500px;
+    max-width:90%;
   }

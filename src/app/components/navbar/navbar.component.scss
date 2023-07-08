@@ -11,6 +11,9 @@ mat-toolbar {
     img {
         height:100%;
     }
+    @media (max-width: 600px) {
+      height:80px;
+    }
   }
   
   .transparent {
@@ -22,6 +25,9 @@ mat-toolbar {
     transition:background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height:80px;
+    @media (max-width: 600px) {
+      height:60px;
+    }
     transition: height 0.3s;
   }
   @keyframes shadow-animation {

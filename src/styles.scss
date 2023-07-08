@@ -11,9 +11,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     text-transform: uppercase;
     font-family: Comfortaa!important;
     line-height:2em!important;
+    @media (max-width: 600px) {
+      font-size:2em!important;
+    }
+}
+p {
+    font-size:1.3em;
+    line-height:1.5em;
+    font-weight:300;
+    @media (max-width: 600px) {
+      font-size:1.25em;
+    }
 }
 
-app-about .about {
+app-about .about, app-unique .unique {
     .icon span, .icon fa-icon {
         font-size:5em;
         line-height:1.5em;

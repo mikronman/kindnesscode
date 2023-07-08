@@ -1,3 +1,19 @@
 .benny {
-    padding:2em;
+    padding:5em;
+    background-color: lavender;
+    @media (max-width: 600px) {
+        padding:2em;
+      }
+    text-align: center;
 }
+
+img {
+    width:400px;
+    max-width:90%;
+    border-radius:12px;
+}
+ p {
+    width:750px;
+    max-width:100%;
+    margin:3em auto;
+ }

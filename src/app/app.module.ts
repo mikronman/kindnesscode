@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
-// Angular Material Imports
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexModule } from '@angular/flex-layout/flex';
+import { GridModule } from '@angular/flex-layout/grid';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -19,6 +21,8 @@ import { WhoComponent } from './components/who/who.component';
 import { MissionComponent } from './components/mission/mission.component';
 import { VisionComponent } from './components/vision/vision.component';
 import { AboutComponent } from './components/about/about.component';
+import { ValuesComponent } from './components/values/values.component';
+import { UniqueComponent } from './components/unique/unique.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,9 @@ import { AboutComponent } from './components/about/about.component';
     WhoComponent,
     MissionComponent,
     VisionComponent,
-    AboutComponent
+    AboutComponent,
+    ValuesComponent,
+    UniqueComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +48,10 @@ import { AboutComponent } from './components/about/about.component';
     MatToolbarModule,
     MatDividerModule,
     MatGridListModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FlexLayoutModule,
+    FlexModule,
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
