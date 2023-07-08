@@ -17,6 +17,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ValuesComponent } from './components/values/values.component';
 import { UniqueComponent } from './components/unique/unique.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SubscribeComponent } from './components/subscribe/subscribe.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,14 +35,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     VisionComponent,
     AboutComponent,
     ValuesComponent,
-    UniqueComponent
+    UniqueComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

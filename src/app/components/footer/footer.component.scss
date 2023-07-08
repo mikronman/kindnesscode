@@ -2,10 +2,14 @@
     background-color:#1EAE98;
     padding:2em;
     color:white;
-    text-align:center;
+    @media (max-width: 991px) {
+        padding:0;
+    }
 }
 
 img {
     width:600px;
     max-width:100%;
+    margin:2em auto;
+    display:block;
 }
