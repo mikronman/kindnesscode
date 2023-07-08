@@ -1,4 +1,4 @@
-<mat-toolbar [ngClass]="{'transparent': !isScrolled, 'scrolled': isScrolled}">
-    <img [src]="logoImage" [alt]="logoAlt" class="logo-dark" [class.logo-light]="isScrolled">
-  </mat-toolbar>
-  
+  <nav class="navbar navbar-light bg-light" [ngClass]="{'transparent': !isScrolled, 'scrolled': isScrolled}">
+    <img class="navbar-brand" href="#" class="logo-dark" [alt]="logoAlt" [src]="logoImage" />
+  </nav>
+    

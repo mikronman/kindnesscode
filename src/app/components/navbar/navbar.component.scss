@@ -1,4 +1,4 @@
-mat-toolbar {
+nav {
     transition: background-color 0.3s;
     position: fixed;
     top: 0;
@@ -11,13 +11,13 @@ mat-toolbar {
     img {
         height:100%;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 991px) {
       height:80px;
     }
   }
   
   .transparent {
-    background-color: transparent;
+    background-color: transparent!important;
   }
   
   .scrolled {
@@ -25,7 +25,7 @@ mat-toolbar {
     transition:background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height:80px;
-    @media (max-width: 600px) {
+    @media (max-width: 991px) {
       height:60px;
     }
     transition: height 0.3s;

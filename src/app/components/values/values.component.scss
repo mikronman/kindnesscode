@@ -1,6 +1,6 @@
 .values {
     padding:2em;
-    @media (max-width: 600px) {
+    @media (max-width: 1024px) {
         padding:0;
     }
     .value {
@@ -46,5 +46,8 @@
     }
     .diversity {
         background-color:#e28a57;
+    }
+    .row > *  {
+        padding:0!important;
     }
 }

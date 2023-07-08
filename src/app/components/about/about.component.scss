@@ -2,23 +2,23 @@
     padding: 2em;
     text-align:center;
     color:#373737;
-    @media (max-width: 600px) {
+    @media (max-width: 991px) {
       padding:0;
       border-bottom:1px solid #d3d3d3;
       margin-bottom:5em;
     }
   }
 
-  .top-row {
+  .who, .what {
     border-bottom:1px solid #d3d3d3;
-    @media (max-width: 600px) {
+    @media (max-width: 991px) {
       border:none;
     }
   }
 
   .who, .mission {
     border-right:1px solid #d3d3d3;
-    @media (max-width: 600px) {
+    @media (max-width: 991x) {
       border:none;
     }
   }
@@ -29,7 +29,7 @@
       cursor:pointer;
       background-color:#fafafa;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 991px) {
       padding:3em;
     }
   }

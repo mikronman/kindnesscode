@@ -5,13 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { FlexModule } from '@angular/flex-layout/flex';
-import { GridModule } from '@angular/flex-layout/grid';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { LayoutComponent } from './components/layout/layout.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,12 +16,12 @@ import { VisionComponent } from './components/vision/vision.component';
 import { AboutComponent } from './components/about/about.component';
 import { ValuesComponent } from './components/values/values.component';
 import { UniqueComponent } from './components/unique/unique.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LayoutComponent,
     HeroComponent,
     WelcomeComponent,
     FooterComponent,
@@ -45,13 +38,8 @@ import { UniqueComponent } from './components/unique/unique.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatDividerModule,
-    MatGridListModule,
     FontAwesomeModule,
-    FlexLayoutModule,
-    FlexModule,
-    GridModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

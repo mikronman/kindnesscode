@@ -1,33 +1,12 @@
 <div class="values">
     <h1 class="mat-h1">Our Values</h1>
-    <div fxLayout.xs="column" fxLayout.lg="row" fxLayoutAlign="center">
-        <div class="value kindness" fxFlex="25%" fxFlex.xs="100%">
-            <h3>Organic</h3>
-            <h2>Kindness</h2>
-            <p>
-                It's a tough world out there, right? Organic Kindness is like a balm, mending divisions and bridging gaps. It's about caring, understanding, and coming together. For our team, it means treating each other with empathy and a real human touch.
-            </p>
+    <div class="row equal-height-row">
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex" *ngFor="let value of values">
+        <div class="value {{value.class}} flex-fill">
+          <h3>{{ value.title }}</h3>
+          <h2>{{ value.subtitle }}</h2>
+          <p>{{ value.description }}</p>
         </div>
-        <div class="value ownership" fxFlex="25%" fxFlex.xs="100%">
-            <h3>Proactive</h3>
-            <h2>Ownership</h2>
-            <p>
-                This is about rolling up our sleeves and getting our hands dirty to make the world a better place. It's saying "I can do something about this," and then doing it. For us, it's about taking responsibility, sparking action, and really making our mark.
-            </p>
-        </div>
-        <div class="value integrity" fxFlex="25%" fxFlex.xs="100%">
-            <h3>Transparent</h3>
-            <h2>Integrity</h2>
-            <p>
-                It's simple - honesty's the best policy. By being real and reliable, we build trust with people. Within our team, it's about open chats, respect, and sticking to our word. No secrets, no games - just us being us.
-            </p>
-        </div>
-        <div class="value diversity" fxFlex="25%" fxFlex.xs="100%">
-            <h3>Inclusive</h3>
-            <h2>Diversity</h2>
-            <p>
-                Everyone's got a unique story to tell, right? By celebrating these differences, we make a world that's a bit more welcoming. For our team, it's about valuing our mix of backgrounds and ideas. It leads to great chats, new insights, and a really cool place to work.
-            </p>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
