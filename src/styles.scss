@@ -24,7 +24,7 @@ p {
     }
 }
 
-app-about .about, app-unique .unique {
+app-about .about, app-unique .unique, app-subscribe .subscribe {
     .icon span, .icon fa-icon {
         font-size:5em;
         line-height:1.5em;
@@ -34,6 +34,7 @@ app-about .about, app-unique .unique {
     }
     .icon fa-icon {
         color:#C2AFF0;
+        margin:0 .25em;
     }
       p {
         font-size:1.25em;

@@ -1,9 +1,15 @@
+// MODULES
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+// COMPONENTS
+import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -16,10 +22,8 @@ import { VisionComponent } from './components/vision/vision.component';
 import { AboutComponent } from './components/about/about.component';
 import { ValuesComponent } from './components/values/values.component';
 import { UniqueComponent } from './components/unique/unique.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BennyWallComponent } from './components/benny-wall/benny-wall.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,14 +40,15 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ValuesComponent,
     UniqueComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    BennyWallComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    NgbModule,
+    // NgbModule,
     HttpClientModule,
     FormsModule
   ],

@@ -1,0 +1,15 @@
+.benny-wall {
+    .picture-slot {
+        height:400px;
+        overflow:hidden;
+    }
+    .benny-picture {
+        height: 100%;
+        object-fit: cover; 
+        object-position: center; 
+        width: 100%;
+    }
+    .row > * {
+        padding:0!important;
+    }
+}

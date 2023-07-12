@@ -10,9 +10,10 @@ nav {
     padding:.5em;
     img {
         height:100%;
+        cursor:pointer;
     }
     @media (max-width: 991px) {
-      height:80px;
+      height:70px;
     }
   }
   
@@ -29,6 +30,15 @@ nav {
       height:60px;
     }
     transition: height 0.3s;
+    .subscribe {
+      background-color:#1EAE98!important;
+      color:white;
+      transition: background-color 0.3s;
+      transition: color 0.3s;
+      &:hover {
+        opacity:.8;
+      }
+    }
   }
   @keyframes shadow-animation {
         from {
@@ -50,3 +60,34 @@ nav {
     opacity: 1;
   }
   
+  .navbar-nav {
+    @media (max-width: 991px) {
+      background:white;
+      width:50%;
+      float:right;
+      border-radius:12px;
+      padding:1em;
+    }
+  }
+  .nav-link{
+    padding: 0.5em 1.5em!important;
+    background-color: rgba(255,255,255,.50);
+    border-radius: 50px;
+    margin-right: 1em;
+    color: #373737;
+    &:hover {
+      color:#1EAE98;
+    }
+    @media (max-width: 991px) {
+      border-radius:0;
+      margin-right:0;
+      width:100%;
+    }
+  }
+
+  .navbar-toggler {
+    background-color:#e5dbff;
+    border:none;
+    margin-right:.5em;
+    color:white;
+  }

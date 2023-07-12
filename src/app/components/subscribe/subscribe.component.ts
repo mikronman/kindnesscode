@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HubspotService } from '../../services/hubspot.service';
+import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-subscribe',
@@ -7,6 +8,8 @@ import { HubspotService } from '../../services/hubspot.service';
   styleUrls: ['./subscribe.component.scss']
 })
 export class SubscribeComponent {
+
+  faHandHoldingHeart = faHandHoldingHeart;
 
   constructor(private hubspotService: HubspotService) {}
 
