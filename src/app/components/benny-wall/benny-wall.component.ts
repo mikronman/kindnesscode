@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-benny-wall',
@@ -6,16 +6,42 @@ import { Component } from '@angular/core';
   styleUrls: ['./benny-wall.component.scss']
 })
 export class BennyWallComponent {
-  pictures: { url: string }[] = [];
+  pictures: { url: string, loaded: boolean }[] = [];
+  totalPictures = 52;
+  batchSize = 10;
+  currentBatchIndex = 0;
 
   constructor() {
-    this.buildPictures();
+    this.loadNextBatch();
   }
 
-  private buildPictures(): void {
-    for (let i = 1; i <= 42; i++) {
-      const picture = { url: `benny_${i}.png` };
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (documentHeight - (windowHeight + scrollTop) < windowHeight / 2) {
+      this.loadNextBatch();
+    }
+    
+  }
+
+  loadNextBatch(): void {
+    const start = this.currentBatchIndex;
+    const end = Math.min(this.currentBatchIndex + this.batchSize, this.totalPictures);
+
+    for (let i = start; i < end; i++) {
+      const picture = { url: `benny_${i + 1}.png`, loaded: false };
       this.pictures.push(picture);
     }
+
+    this.currentBatchIndex += this.batchSize;
+  }
+
+  onPictureLoad(picture: { url: string, loaded: boolean }): void {
+    setTimeout(() => {
+      picture.loaded = true;
+    }, 0);
   }
 }
