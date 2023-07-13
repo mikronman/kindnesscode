@@ -13,7 +13,7 @@ export class BennyWallComponent {
   }
 
   private buildPictures(): void {
-    for (let i = 1; i <= 27; i++) {
+    for (let i = 1; i <= 42; i++) {
       const picture = { url: `benny_${i}.png` };
       this.pictures.push(picture);
     }
