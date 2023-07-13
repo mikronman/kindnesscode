@@ -1,0 +1,14 @@
+.share {
+    padding:1em 1em;
+    text-align:center;
+    background:#fafafa;
+    a {
+        text-decoration:none;
+        font-size:3em;
+        margin:0 5px;
+        color:#ab97db;
+        &:hover {
+            color:#8e79be;
+        } 
+    }
+}

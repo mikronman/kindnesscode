@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-
+import { Router, NavigationEnd, Event } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  
   constructor(private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
@@ -14,5 +14,6 @@ export class AppComponent {
       }
     });
   }
-  title = 'Kindness Code';
+
+  title = 'The Kindness Code Foundation';
 }

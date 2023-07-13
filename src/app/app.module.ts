@@ -24,6 +24,7 @@ import { ValuesComponent } from './components/values/values.component';
 import { UniqueComponent } from './components/unique/unique.component';
 import { BennyWallComponent } from './components/benny-wall/benny-wall.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
+import { ShareComponent } from './components/share/share.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SubscribeComponent } from './components/subscribe/subscribe.component';
     ValuesComponent,
     UniqueComponent,
     SubscribeComponent,
-    BennyWallComponent
+    BennyWallComponent,
+    ShareComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<div class="share">
+    <a target="_blank" [href]="'https://www.facebook.com/sharer/sharer.php?u=' + currentURL" aria="Facebook">
+        <fa-icon [icon]="faFacebookSquare"></fa-icon>
+    </a>
+
+    <a target="_blank" [href]="'https://twitter.com/intent/tweet?url=' + currentURL" aria="Twitter">
+        <fa-icon [icon]="faTwitterSquare"></fa-icon>
+    </a>
+
+    <a target="_blank" [href]="'https://www.linkedin.com/sharing/share-offsite/?url=' + currentURL" aria="LinkedIn">
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+    </a>
+
+    <a target="_blank" [href]="'https://www.reddit.com/submit?url=' + currentURL" aria="Reddit">
+        <fa-icon [icon]="faRedditSquare"></fa-icon>
+    </a>
+
+    <!-- <a target="_blank" [href]="'mailto:?subject=I wanted to share this with you&body=' + currentURL" aria="email">
+        <fa-icon [icon]="faEnvelopeSquare"></fa-icon>
+    </a> -->
+</div>
