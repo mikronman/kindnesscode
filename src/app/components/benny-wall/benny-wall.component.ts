@@ -7,7 +7,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class BennyWallComponent {
   pictures: { url: string, loaded: boolean }[] = [];
-  totalPictures = 52;
+  totalPictures = 51;
   batchSize = 10;
   currentBatchIndex = 0;
 
