@@ -49,7 +49,10 @@ export class RoadmapComponent {
     {
       title:  'Innovation',
       desc: `We're excited about bringing kindness into the world of cyberspace. Our goal is to create a curriculum that blends empathy with coding basics. We're also developing a new way to measure the social impact of each donation. We're confident these fresh approaches will offer a unique experience to our communities.`
-    }
-    
+    },
+    {
+      title:  'Research',
+      desc: `There's a lot to learn, and many successful companies that grew to make a huge impact in the world. We'd love to learn from them through ongoing market research, interviews and partnerships.`
+    },
   ];
 }
