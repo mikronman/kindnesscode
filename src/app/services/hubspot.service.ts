@@ -14,6 +14,7 @@ export class HubspotService {
   constructor(private http: HttpClient) {}
 
   subscribe(email: string): Observable<any> {
+    console.log(environment);
     const body = { email: email };
     return this.http.post(this.serverApiUrl, body);
   }
