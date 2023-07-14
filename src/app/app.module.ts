@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BlogModule } from './blog/blog.module';
 import { GraphQLModule } from './graphql.module';
+import { SharedModule } from './shared/shared.module';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
@@ -25,8 +25,10 @@ import { AboutComponent } from './components/about/about.component';
 import { ValuesComponent } from './components/values/values.component';
 import { UniqueComponent } from './components/unique/unique.component';
 import { BennyWallComponent } from './components/benny-wall/benny-wall.component';
-import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { ShareComponent } from './components/share/share.component';
+
+// SERVICES
+import { SeoService } from './seo.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,6 @@ import { ShareComponent } from './components/share/share.component';
     AboutComponent,
     ValuesComponent,
     UniqueComponent,
-    SubscribeComponent,
     BennyWallComponent,
     ShareComponent
   ],
@@ -52,14 +53,14 @@ import { ShareComponent } from './components/share/share.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    // NgbModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     GraphQLModule,
-    BlogModule
+    BlogModule,
+    SharedModule
   ],
-  providers: [],
+  providers: [SeoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,6 +5,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogComponent } from './blog/blog.component';
+import { SharedModule } from '../shared/shared.module';
 
 const blogRoutes: Routes = [
   { path: 'blog', component: BlogListComponent },
@@ -19,6 +20,7 @@ const blogRoutes: Routes = [
   imports: [
     FontAwesomeModule,
     CommonModule,
+    SharedModule,
     RouterModule.forChild(blogRoutes)
   ]
 })

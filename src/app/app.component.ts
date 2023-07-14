@@ -6,6 +6,7 @@ import { Router, NavigationEnd, Event } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title = 'The Kindness Code Foundation';
   
   constructor(private router: Router) {
     this.router.events.subscribe(event => {
@@ -16,6 +17,4 @@ export class AppComponent {
       }
     });
   }
-
-  title = 'The Kindness Code Foundation';
 }
