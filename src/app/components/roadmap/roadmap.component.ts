@@ -35,6 +35,10 @@ export class RoadmapComponent {
       desc: `As we get bigger, we’ll be setting up solid financial planning and accounting. We’ll also be organizing fundraisers, and working towards getting donations, grants, and sponsorships.`
     },
     {
+      title:  'Swaaaaaag',
+      desc: `We plan to design and sell cool hats, shirts and other merch - all proceeds going back into the organiztion to support the critical programs we are developing.`
+    },
+    {
       title:  'Technology',
       desc: `We’ve got a lot to do developing platforms to manage events, partnerships, volunteers, and generous donors. We need to set up a secure payment system for donations and transparent reporting and analytics. We’ll also build more services to manage our growing organization.`
     },
