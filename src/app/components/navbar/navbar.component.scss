@@ -19,7 +19,8 @@ nav {
   
   .transparent {
     //background: linear-gradient(to top, rgba(171, 151, 219, 0), rgba(171, 151, 219, 0.5)) !important;
-    background:rgba(171, 151, 219, .75)!important;
+    //background:rgba(171, 151, 219, .75)!important;
+    background:#1eae98!important;
   }
   
   .scrolled {
@@ -27,6 +28,12 @@ nav {
     transition:background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height:75px;
+    .nav-link {
+      color:#373737;
+      &:hover {
+        color:white;
+      }
+    }
     @media (max-width: 991px) {
       height:60px;
     }
@@ -53,6 +60,7 @@ nav {
   }
   
   .navbar-nav {
+    margin-right:1em;
     @media (max-width: 991px) {
       background:white;
       width:300px;
@@ -63,24 +71,26 @@ nav {
     }
   }
   .nav-link{
-    padding: 0.5em 1.5em!important;
-    background-color: rgba(255,255,255,.50);
-    border-radius: 50px;
-    margin-right: 1em;
-    color: #373737;
+    padding: 0.5em 1em!important;
+    border-radius:6px;
+    margin-right: 5px;
+    color: white;
     &:hover {
-      color:white;
-      background:#ab97db;
+      background:#159683;
     }
     @media (max-width: 991px) {
-      border-radius:0;
+      border-radius:5px;
       margin-right:0;
       width:100%;
+      color:#373737;
+      &:hover {
+        background:#efefef;
+      }
     }
   }
 
   .navbar-toggler {
-    background-color:#e5dbff;
+    background-color:#efefef;
     border:none;
     margin-right:.5em;
     color:white;
