@@ -30,8 +30,8 @@ app.post('/api/subscribe', async (req, res) => {
         const response = await axios.post(hubspotApiUrl, data, { headers });
         res.status(200).json({ message: "Contact created successfully." });
     } catch (error) {
-        console.error('Error creating contact: ', error.response ? error.response.data : error.message);
-        console.error('Error creating contact: ', error);
+        //console.error('Error creating contact: ', error.response ? error.response.data : error.message);
+        //console.error('Error creating contact: ', error);
         res.status(500).json({ message: "Error creating contact." });
     }
 });
