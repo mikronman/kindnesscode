@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll')
   onScroll() {
-    this.isScrolled = (window.scrollY || document.documentElement.scrollTop || document.body.scrollTop) > 125;
+    this.isScrolled = (window.scrollY || document.documentElement.scrollTop || document.body.scrollTop) > 100;
     this.logoImage = this.isScrolled ? '../../assets/img/logo_full.svg' : '../../assets/img/logo_full_alt.svg';
   }
 

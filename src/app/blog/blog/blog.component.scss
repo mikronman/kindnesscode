@@ -1,0 +1,27 @@
+.blog-wrap {
+    padding: 10em 0 5em 0;
+    .post-img-container {
+        height:400px;
+        width:600px;
+        max-width:100%;
+        overflow:hidden;
+        margin-bottom:2em;
+        img {
+            height: 100%;
+            object-fit: cover; 
+            object-position: center; 
+            width: 100%;
+            border-radius:5px;
+        }
+    }
+    .btn-primary {
+        padding:.75em 2em;
+        font-size:1em;
+        background-color:#1EAE98;
+        border:none;
+        margin-bottom:1em;
+        &:hover {
+            opacity:.9;
+        }
+    }
+}

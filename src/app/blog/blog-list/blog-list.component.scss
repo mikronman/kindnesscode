@@ -1,0 +1,30 @@
+.blog-wrap {
+    width:100%;
+    padding:10em 2em 5em 2em;
+    .blog-card {
+        padding:1.5em;
+        background:#fafafa;
+        border-radius:6px;
+    }
+    .img-wrap {
+        height:300px;
+        overflow:hidden;
+        margin-bottom:1em;
+        img {
+            height: 100%;
+            object-fit: cover; 
+            object-position: center; 
+            width: 100%;
+            border-radius:3px;
+        }
+    }
+    .btn-primary {
+        padding:.75em 2em;
+        font-size:1em;
+        background-color:#1EAE98;
+        border:none;
+        &:hover {
+            opacity:.9;
+        }
+    }
+}

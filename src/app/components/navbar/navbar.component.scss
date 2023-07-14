@@ -5,7 +5,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 100;
-    height:100px;
+    height:90px;
     transition: height 0.3s;
     padding:.5em;
     img {
@@ -18,14 +18,15 @@ nav {
   }
   
   .transparent {
-    background: linear-gradient(to top, rgba(171, 151, 219, 0), rgba(171, 151, 219, 0.5)) !important;
+    //background: linear-gradient(to top, rgba(171, 151, 219, 0), rgba(171, 151, 219, 0.5)) !important;
+    background:rgba(171, 151, 219, .75)!important;
   }
   
   .scrolled {
     background-color: white;
     transition:background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height:80px;
+    height:75px;
     @media (max-width: 991px) {
       height:60px;
     }
@@ -68,7 +69,8 @@ nav {
     margin-right: 1em;
     color: #373737;
     &:hover {
-      color:#1EAE98;
+      color:white;
+      background:#ab97db;
     }
     @media (max-width: 991px) {
       border-radius:0;

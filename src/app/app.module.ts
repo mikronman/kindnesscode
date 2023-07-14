@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BlogModule } from './blog/blog.module';
+import { GraphQLModule } from './graphql.module';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
@@ -53,7 +55,9 @@ import { ShareComponent } from './components/share/share.component';
     // NgbModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    GraphQLModule,
+    BlogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
