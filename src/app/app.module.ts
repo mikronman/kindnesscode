@@ -29,6 +29,7 @@ import { ShareComponent } from './components/share/share.component';
 
 // SERVICES
 import { SeoService } from './seo.service';
+import { RoadmapComponent } from './components/roadmap/roadmap.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SeoService } from './seo.service';
     ValuesComponent,
     UniqueComponent,
     BennyWallComponent,
-    ShareComponent
+    ShareComponent,
+    RoadmapComponent
   ],
   imports: [
     BrowserModule,

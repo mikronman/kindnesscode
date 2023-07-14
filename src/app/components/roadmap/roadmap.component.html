@@ -1,0 +1,14 @@
+<div class="roadmap">
+    <h1>Our Roadmap</h1>
+    <p>We are building the organization and workshopping ideas. Let's give you a glimpse of where we are going, in no particular order.</p>
+    <div class="row pt-3">
+        <div *ngFor="let item of roadmapItems" class="col-md-6 d-flex">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h3 class="card-title"><fa-icon [icon]="faSquare"></fa-icon> {{ item.title }}</h3>
+              <p class="pt-3">{{ item.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
