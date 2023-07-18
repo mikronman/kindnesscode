@@ -30,6 +30,8 @@ import { ShareComponent } from './components/share/share.component';
 // SERVICES
 import { SeoService } from './seo.service';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
+import { WorkshopComponent } from './components/workshop/workshop.component';
+import { BenComponent } from './components/workshop/ben/ben.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { RoadmapComponent } from './components/roadmap/roadmap.component';
     UniqueComponent,
     BennyWallComponent,
     ShareComponent,
-    RoadmapComponent
+    RoadmapComponent,
+    WorkshopComponent,
+    BenComponent
   ],
   imports: [
     BrowserModule,
