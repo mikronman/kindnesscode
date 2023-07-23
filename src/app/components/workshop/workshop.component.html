@@ -3,5 +3,22 @@
         <h1>The Workshop</h1>
         <p>This is where you get to see ideas we are actively working on!</p>
     </div>
-    <app-ben></app-ben>
+    <div class="workshop-body">
+        <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    The Adventures of Sophie and Ben
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                    <app-ben></app-ben>
+                </div>
+                </div>
+            </div>
+        </div>          
+    </div>
 </div>
+<app-subscribe></app-subscribe>
+  

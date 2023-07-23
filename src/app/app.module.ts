@@ -26,12 +26,12 @@ import { ValuesComponent } from './components/values/values.component';
 import { UniqueComponent } from './components/unique/unique.component';
 import { BennyWallComponent } from './components/benny-wall/benny-wall.component';
 import { ShareComponent } from './components/share/share.component';
-
-// SERVICES
-import { SeoService } from './seo.service';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
 import { WorkshopComponent } from './components/workshop/workshop.component';
 import { BenComponent } from './components/workshop/ben/ben.component';
+
+// SERVICES
+import { SeoService } from './seo.service';
 
 @NgModule({
   declarations: [
