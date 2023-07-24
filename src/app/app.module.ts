@@ -29,9 +29,13 @@ import { ShareComponent } from './components/share/share.component';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
 import { WorkshopComponent } from './components/workshop/workshop.component';
 import { BenComponent } from './components/workshop/ben/ben.component';
+import { BrainComponent } from './components/workshop/brain/brain.component';
+import { VoicesComponent } from './components/workshop/voices/voices.component';
 
 // SERVICES
 import { SeoService } from './seo.service';
+import { ActionComponent } from './components/workshop/action/action.component';
+import { BooksComponent } from './components/workshop/books/books.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,11 @@ import { SeoService } from './seo.service';
     ShareComponent,
     RoadmapComponent,
     WorkshopComponent,
-    BenComponent
+    BenComponent,
+    BrainComponent,
+    VoicesComponent,
+    ActionComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,

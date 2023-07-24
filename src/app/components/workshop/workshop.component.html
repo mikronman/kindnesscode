@@ -1,23 +1,31 @@
 <div class="workshop">
     <div class="workshop-intro">
         <h1>The Workshop</h1>
-        <p>This is where you get to see ideas we are actively working on!</p>
+        <p>
+            Explore our creative hub, where ideas take shape and grow. As our concepts transition into reality, we share not just the results, but the insights and learning gained along the journey. Welcome to the evolving narrative of The Kindness Code Foundation.
+        </p>
     </div>
     <div class="workshop-body">
         <div class="accordion" id="myAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    The Adventures of Sophie and Ben
+            <div class="accordion-item" *ngFor="let item of accordionData; let i = index">
+              <h2 class="accordion-header" [id]="'heading' + (i+1)">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#' + item.id" aria-expanded="true" [attr.aria-controls]="item.id">
+                  {{ item.header }}
                 </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#myAccordion">
+              </h2>
+              <div [id]="item.id" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading' + (i+1)" data-bs-parent="#myAccordion">
                 <div class="accordion-body">
-                    <app-ben></app-ben>
+                  <ng-container [ngSwitch]="item.content">
+                    <app-ben *ngSwitchCase="'app-ben'"></app-ben>
+                    <app-brain *ngSwitchCase="'app-brain'"></app-brain>
+                    <app-voices *ngSwitchCase="'app-voices'"></app-voices>
+                    <app-action *ngSwitchCase="'app-action'"></app-action>
+                    <app-books *ngSwitchCase="'app-books'"></app-books>
+                  </ng-container>
                 </div>
-                </div>
+              </div>
             </div>
-        </div>          
+          </div>                                  
     </div>
 </div>
 <app-subscribe></app-subscribe>
