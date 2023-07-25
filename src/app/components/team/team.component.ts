@@ -14,7 +14,7 @@ export class TeamComponent {
     {
       image: '../../../assets/img/team/michael.jpg',
       name: 'Michael Kleczka',
-      title: 'Founder, CEO & Chairman',
+      title: 'Founder & Chairman',
       bio: `A visionary guy with extensive experience in leading teams and building online applications. Michael steers strategic direction and inspires others toward innovation and excellence, ensuring alignment with KCF's mission, values and objectives.`
     },
     {
