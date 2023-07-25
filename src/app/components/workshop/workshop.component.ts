@@ -1,5 +1,8 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit, Inject, OnDestroy } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import { Router } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
+import { SeoService } from '../../seo.service';
 
 declare var bootstrap: any; // add this line to use Bootstrap JS in Angular
 
@@ -38,7 +41,29 @@ export class WorkshopComponent implements AfterViewInit {
     },
   ]
 
-  constructor(private viewportScroller: ViewportScroller) { }
+
+  constructor(
+    private viewportScroller: ViewportScroller,
+    private router: Router, 
+    @Inject(DOCUMENT) private document: Document,
+    private seoService: SeoService
+    ) {}
+
+    ngOnInit() {
+      const url = this.document.location.origin + this.router.url;
+      this.seoService.setTitle('The Kindness Code Foundation Workshop');
+      this.seoService.setMetaTags([
+        {name: 'keywords', content: 'Workshop, Ideas, Concepts, The Kindness Code Foundation'},
+        {name: 'description', content: `Learn more about the Kindness Code Foundation's Ideas!`},
+        {property: 'og:title', content: 'The Kindness Code Foundation Workshop'},
+        {property: 'og:description', content: `Learn more about the Kindness Code Foundation's Ideas!`},
+        {property: 'og:url', content: url}
+      ]);
+    }
+  
+    ngOnDestroy() {
+      this.seoService.clearMetaTags();
+    }
 
   ngAfterViewInit(): void {
     const accordions = document.querySelectorAll('.accordion');

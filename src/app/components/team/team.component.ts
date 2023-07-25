@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
+import { SeoService } from '../../seo.service';
 
 @Component({
   selector: 'app-team',
@@ -81,5 +84,27 @@ export class TeamComponent {
       bio: `Partners providing essential capital and strategic resources to help us scale our projects and deepen our impact. Their insights and connections accelerate our growth and enable us to reach more children with our innovative educational experiences.`
     }
   ]
+
+  constructor(
+    private router: Router, 
+    @Inject(DOCUMENT) private document: Document,
+    private seoService: SeoService
+    ) {}
+
+    ngOnInit() {
+      const url = this.document.location.origin + this.router.url;
+      this.seoService.setTitle('The Kindness Code Foundation Team');
+      this.seoService.setMetaTags([
+        {name: 'keywords', content: 'Team, The Kindness Code Foundation, Help'},
+        {name: 'description', content: `Learn more about the Kindness Code Foundation Team!`},
+        {property: 'og:title', content: 'The Kindness Code Foundation Team'},
+        {property: 'og:description', content: `Learn more about the Kindness Code Foundation Team!`},
+        {property: 'og:url', content: url}
+      ]);
+    }
+  
+    ngOnDestroy() {
+      this.seoService.clearMetaTags();
+    }
 
 }
