@@ -1,0 +1,38 @@
+.team {
+    margin: 10em auto 5em auto;
+    padding:0 2em;
+    width:1200px;
+    max-width:100%;
+    @media (max-width: 600px) {
+        margin: 7em auto 5em auto;
+    }
+    h1, p {
+        text-align: center;
+    }
+    .img-wrap {
+        height:300px;
+        max-width:100%;
+        overflow:hidden;
+        img {
+            height: 100%;
+            object-fit: cover; 
+            object-position: center; 
+            width: 100%;
+            border-radius:3px;
+        }
+    }
+    .member-card {
+        border:5px solid white;
+        padding:1em;
+        background: #fafafa;
+        border-radius:6px;
+        cursor:pointer;
+        &:hover {
+            background:#f5f5f5;
+        }
+        .content-wrap {
+            text-align:center;
+            margin-top:1em;
+        }
+    }
+}

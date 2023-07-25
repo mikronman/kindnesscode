@@ -5,6 +5,7 @@ import { BennyComponent } from './components/benny/benny.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { RoadmapComponent } from './components/roadmap/roadmap.component';
 import { WorkshopComponent } from './components/workshop/workshop.component';
+import { TeamComponent } from './components/team/team.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'benny', component: BennyComponent },
   { path: 'subscribe', component: SubscribeComponent },
   { path: 'roadmap', component: RoadmapComponent },
-  { path: 'workshop', component: WorkshopComponent }
+  { path: 'workshop', component: WorkshopComponent },
+  { path: 'team', component: TeamComponent }
 ];
 
 @NgModule({

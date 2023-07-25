@@ -1,0 +1,19 @@
+<div class="team">
+    <h1>Building a Team</h1>
+    <p>
+        Contact <b>care@thekindnesscodefoundation.org</b> if interested in joining.
+    </p>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6 col-lg-4 member-card" *ngFor="let member of members">
+            <div class="img-wrap">
+                <img src='{{ member.image }}' alt="Member Image">
+            </div>
+            <div class="content-wrap">
+                <h2>{{ member.name }}</h2>
+                <p class="small">{{ member.title }}</p>
+                <p>{{ member.bio }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<app-subscribe></app-subscribe>
