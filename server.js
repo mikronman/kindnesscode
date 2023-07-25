@@ -37,7 +37,7 @@ const getSubscriptionTypes = async () => {
   getSubscriptionTypes();
 
 app.post('/api/subscribe', async (req, res) => {
-    const { email } = req.body;
+    const { firstName, lastName, email, interests, message } = req.body;
     
     const hubspotApiUrl = 'https://api.hubapi.com/crm/v3/objects/contacts';
     const subscriptionUpdateUrl = `https://api.hubapi.com/email/public/v1/subscriptions/${email}`;
@@ -49,6 +49,12 @@ app.post('/api/subscribe', async (req, res) => {
     const data = {
         properties: {
             email: email,
+            firstname: firstName, 
+            lastname: lastName, 
+            // For other custom properties like interests or message, you need to make sure you have these fields in your HubSpot contact properties
+            // Assuming 'interests' and 'message' are the internal name of your HubSpot properties
+            interests: interests.join(';'), // Since interests is an array, we need to convert it into a string. I used a comma-separated string here
+            message: message
         }
     };
 

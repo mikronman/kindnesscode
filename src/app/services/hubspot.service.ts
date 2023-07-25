@@ -13,9 +13,18 @@ export class HubspotService {
 
   constructor(private http: HttpClient) {}
 
-  subscribe(email: string): Observable<any> {
-    //console.log(environment);
-    const body = { email: email };
-    return this.http.post(this.serverApiUrl, body);
+  subscribe(firstName: string, lastName: string, email: string, interests: string[], message: string) {
+    // Collect the data in the same format as the backend expects
+    const data = {
+      firstName,
+      lastName,
+      email,
+      interests,
+      message
+    };
+  
+    // Make the POST request
+    return this.http.post('http://localhost:8080/api/subscribe', data);
   }
+  
 }
