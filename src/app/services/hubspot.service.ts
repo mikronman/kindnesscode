@@ -24,7 +24,7 @@ export class HubspotService {
     };
   
     // Make the POST request
-    return this.http.post('http://localhost:8080/api/subscribe', data);
+    return this.http.post(environment.serverApiUrl, data);
   }
   
 }
