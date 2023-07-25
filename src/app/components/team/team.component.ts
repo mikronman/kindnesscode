@@ -46,6 +46,18 @@ export class TeamComponent {
     },
     {
       image: '../../../assets/img/team/placeholder_person.svg',
+      name: 'App Designers',
+      title: 'Wanted',
+      bio: `Creatives who are responsible for visually shaping our platform and storytelling experience. They create the user interfaces, design the look and feel of our applications, and help develop a captivating and immersive user experience.`
+    },
+    {
+      image: '../../../assets/img/team/placeholder_person.svg',
+      name: 'Illustrators',
+      title: 'Wanted',
+      bio: `Artists who bring our narratives and characters to life through visual art. They work closely with our writers and designers to create engaging, colorful, and vibrant illustrations that resonate with our young audience and enhance the storytelling experience.`
+    },
+    {
+      image: '../../../assets/img/team/placeholder_person.svg',
       name: 'Volunteers',
       title: 'Wanted',
       bio: `Assist in various capacities as needed, from helping at events to administrative tasks. Their role is flexible based on the organization's needs and their own skills and interests.`
