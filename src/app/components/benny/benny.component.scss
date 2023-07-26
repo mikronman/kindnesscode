@@ -1,16 +1,12 @@
 .benny {
-    padding:10em 0 5em 0;
-    background-color: lavender;
-    @media (max-width: 600px) {
-        padding:5em 2em 3em 2em;
-      }
     text-align: center;
 }
 
 img {
     width:400px;
     max-width:90%;
-    border-radius:12px;
+    border-radius:100%;
+    border:10px solid lavender;
 }
  p {
     width:1200px;

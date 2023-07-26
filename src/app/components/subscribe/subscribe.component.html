@@ -1,4 +1,4 @@
-<div class="subscribe">
+<div class="subscribe container">
     <div class="icon">
         <span>{{'{'}}<fa-icon [icon]="faHandHoldingHeart"></fa-icon>{{'}'}}</span>
     </div>
@@ -8,28 +8,35 @@
             <p class="pb-3">We have a lot of exciting things planned to share Benny's story and carry his spirit forward by giving back to our communities! Sign up to participate and receive updates on what we are up to.</p>
             <form [formGroup]="subscribeForm" (ngSubmit)="subscribe(subscribeForm.value)">
                 <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input formControlName="firstName" type="text" class="form-control" placeholder="First Name" required>
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <input formControlName="lastName" type="text" class="form-control" placeholder="Last Name" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-                </div>
-                <div class="form-group mb-4 mt-4">
-                  <label><b>What are you interested in?</b></label>
-                  <div *ngFor="let interest of interests" class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="{{interest.value}}" [formControlName]="interest.value">
-                    <label class="form-check-label" for="{{interest.value}}">{{interest.label}}</label>
-                  </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-12 form-group">
+                                <input formControlName="firstName" type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <input formControlName="lastName" type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <div class="form-group mb-4 mt-4">
+                            <label><b>What are you interested in?</b></label>
+                            <div *ngFor="let interest of interests" class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="{{interest.value}}" [formControlName]="interest.value">
+                                <label class="form-check-label" for="{{interest.value}}">{{interest.label}}</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <p class="small instructions">If volunteering or applying, please provide your specific interests or skills below:</p>
                 <div class="form-group">
                   <textarea formControlName="message" class="form-control" placeholder="Enter your message here..."></textarea>
                 </div>
-                <p class="small disclaimer">You are opting in for internal communications and marketing. Your information will be kept safe and never sold or given away.</p>
+                <p class="small disclaimer">Your information will be kept safe and never sold or given away.</p>
                 <button type="submit" class="btn btn-primary shadow-sm" [disabled]="subscribeForm.invalid">Subscribe</button>
               </form>
         </div>

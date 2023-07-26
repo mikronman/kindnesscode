@@ -1,10 +1,4 @@
 .subscribe {
-    padding:8em 2em 0 2em;
-    margin-bottom:5em;
-    @media (max-width: 600px) {
-        padding:4em 0 0 0 ;
-        margin:2em auto;
-    }
     fa-icon {
         font-size:1em;
     }
@@ -21,11 +15,9 @@
     }
 }
 .form-wrap {
-    width:750px;
-    max-width:100%;
     margin:0 auto 2em auto;
-    padding:2em;
     border-radius:12px;
+    padding:0 1em 3em 1em;
 }
 
 .form-group input {
