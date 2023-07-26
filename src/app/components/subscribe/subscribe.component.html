@@ -5,7 +5,7 @@
     <div class="form-wrap">
         <div *ngIf="!submitted">
             <h1>Join Us!</h1>
-            <p class="pb-3">We have a lot of exciting things planned to share Benny's story and carry his spirit forward by giving back to our communities! Sign up with just your email address to receive updates on what we are up to.</p>
+            <p class="pb-3">We have a lot of exciting things planned to share Benny's story and carry his spirit forward by giving back to our communities! Sign up to participate and receive updates on what we are up to.</p>
             <form [formGroup]="subscribeForm" (ngSubmit)="subscribe(subscribeForm.value)">
                 <div class="row">
                   <div class="col-md-6 form-group">
@@ -27,7 +27,7 @@
                 </div>
                 <p class="small instructions">If volunteering or applying, please provide your specific interests or skills below:</p>
                 <div class="form-group">
-                  <textarea formControlName="message" class="form-control" placeholder="Send us a message!"></textarea>
+                  <textarea formControlName="message" class="form-control" placeholder="Enter your message here..."></textarea>
                 </div>
                 <p class="small disclaimer">You are opting in for internal communications and marketing. Your information will be kept safe and never sold or given away.</p>
                 <button type="submit" class="btn btn-primary shadow-sm" [disabled]="subscribeForm.invalid">Subscribe</button>
