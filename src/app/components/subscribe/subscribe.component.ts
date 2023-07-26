@@ -23,7 +23,8 @@ export class SubscribeComponent implements OnInit {
     interests = [
       {label: 'News and updates', value: 'news'},
       {label: 'Volunteering', value: 'volunteering'},
-      {label: 'Open positions', value: 'positions'}
+      {label: 'Open positions', value: 'positions'},
+      {label: 'Donating', value: 'donating'}
     ];
 
   subscribe(formData: any) {

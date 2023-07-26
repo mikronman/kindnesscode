@@ -51,9 +51,7 @@ app.post('/api/subscribe', async (req, res) => {
             email: email,
             firstname: firstName, 
             lastname: lastName, 
-            // For other custom properties like interests or message, you need to make sure you have these fields in your HubSpot contact properties
-            // Assuming 'interests' and 'message' are the internal name of your HubSpot properties
-            interests: interests.join(';'), // Since interests is an array, we need to convert it into a string. I used a comma-separated string here
+            interests: interests.join(';'),
             message: message
         }
     };
