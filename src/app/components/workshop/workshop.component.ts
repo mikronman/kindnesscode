@@ -35,6 +35,11 @@ export class WorkshopComponent implements AfterViewInit {
       id: 'collapseFour'
     },
     {
+      header: "Digital Kindness Initiative",
+      content: "app-digital",
+      id: 'collapseSix'
+    },
+    {
       header: "Benny's Book Club",
       content: 'app-books',
       id: 'collapseFive'

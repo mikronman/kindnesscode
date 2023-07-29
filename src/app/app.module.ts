@@ -37,6 +37,7 @@ import { SeoService } from './seo.service';
 import { ActionComponent } from './components/workshop/action/action.component';
 import { BooksComponent } from './components/workshop/books/books.component';
 import { TeamComponent } from './components/team/team.component';
+import { DigitalComponent } from './components/workshop/digital/digital.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { TeamComponent } from './components/team/team.component';
     VoicesComponent,
     ActionComponent,
     BooksComponent,
-    TeamComponent
+    TeamComponent,
+    DigitalComponent
   ],
   imports: [
     BrowserModule,
