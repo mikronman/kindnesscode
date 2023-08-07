@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { faSquare } from '@fortawesome/free-regular-svg-icons';
+import { SeoService } from 'src/app/seo.service';
 
 interface RoadmapItem {
   title: string;
@@ -20,7 +23,7 @@ export class RoadmapComponent {
     },
     {
       title: 'Program Development',
-      desc: `We've got four big strategies. One, creating educational resources that blend coding and digital ethics. Two, tackling community needs with coding workshops and campaigns promoting ethical digital behavior. Three, making partnerships to widen our reach and impact. Four, advocating for ethical behavior to inspire kindness both online and offline.`
+      desc: `We are in the initial stages of program development, exploring a blend of unique and ambitious ideas, some readily achievable and others that push the boundaries of innovation.`
     },
     {
       title:  'Business & Legal',
@@ -28,7 +31,7 @@ export class RoadmapComponent {
     },
     {
       title:  'Team Building',
-      desc: `We’re in the process of filling important roles to get bigger projects started. We’re figuring out our organizational structure, how we’ll work together, and what tools we need. Later on, we'll establish a board of directors and advisors, and set up bylaws and governance policies.`
+      desc: `We're focused on key partnerships, advisors and experts who can help us research, develop, market and launch our first program. Along our initial journey we will be seeking volunteers willing to help at various capacities while we get this off the ground.`
     },
     {
       title:  'Finances',
@@ -55,4 +58,26 @@ export class RoadmapComponent {
       desc: `There's a lot to learn, and many successful companies that grew to make a huge impact in the world. We'd love to learn from them through ongoing market research, interviews and partnerships.`
     },
   ];
+
+  constructor(
+    private router: Router, 
+    @Inject(DOCUMENT) private document: Document,
+    private seoService: SeoService
+    ) {}
+
+    ngOnInit() {
+      const url = this.document.location.origin + this.router.url;
+      this.seoService.setTitle('The Kindness Code Foundation Roadmap');
+      this.seoService.setMetaTags([
+        {name: 'keywords', content: 'The Kindness Code Foundation, Roadmap'},
+        {name: 'description', content: `Learn more about the Kindness Code Foundation Roadmap!`},
+        {property: 'og:title', content: 'The Kindness Code Foundation Roadmap'},
+        {property: 'og:description', content: `Learn more about the Kindness Code Foundation Roadmap!`},
+        {property: 'og:url', content: url}
+      ]);
+    }
+  
+    ngOnDestroy() {
+      this.seoService.clearMetaTags();
+    }
 }

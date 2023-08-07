@@ -38,6 +38,7 @@ import { ActionComponent } from './components/workshop/action/action.component';
 import { BooksComponent } from './components/workshop/books/books.component';
 import { TeamComponent } from './components/team/team.component';
 import { DigitalComponent } from './components/workshop/digital/digital.component';
+import { CampComponent } from './components/workshop/camp/camp.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { DigitalComponent } from './components/workshop/digital/digital.componen
     ActionComponent,
     BooksComponent,
     TeamComponent,
-    DigitalComponent
+    DigitalComponent,
+    CampComponent
   ],
   imports: [
     BrowserModule,

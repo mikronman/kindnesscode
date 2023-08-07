@@ -17,33 +17,38 @@ export class WorkshopComponent implements AfterViewInit {
     {
       header: 'Kind Voices Project',
       content: 'app-voices',
-      id: 'collapseOne'
+      id: 'voices'
     },
     {
       header: 'The Adventures of Sophie and Ben',
       content: 'app-ben',
-      id: 'collapseTwo'
+      id: 'adventures'
     },
     {
       header: "Ben's Brain - Interactive AI Experience",
       content: 'app-brain',
-      id: 'collapseThree'
+      id: 'brain'
     },
     {
       header: "Kindness in Action",
       content: 'app-action',
-      id: 'collapseFour'
+      id: 'action'
     },
     {
       header: "Digital Kindness Initiative",
       content: "app-digital",
-      id: 'collapseSix'
+      id: 'digital'
     },
     {
       header: "Benny's Book Club",
       content: 'app-books',
-      id: 'collapseFive'
+      id: 'book'
     },
+    {
+      header: "Camp Kind",
+      content: 'app-camp',
+      id: 'camp'
+    }
   ]
 
 
