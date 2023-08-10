@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BlogModule } from './blog/blog.module';
+import { EventsModule } from './events/events.module'
 import { GraphQLModule } from './graphql.module';
 import { SharedModule } from './shared/shared.module';
 
@@ -78,6 +79,7 @@ import { CampComponent } from './components/workshop/camp/camp.component';
     ReactiveFormsModule,
     GraphQLModule,
     BlogModule,
+    EventsModule,
     SharedModule
   ],
   providers: [SeoService],
