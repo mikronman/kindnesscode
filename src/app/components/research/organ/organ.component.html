@@ -1,0 +1,85 @@
+<div class="container organ">
+    <h1>Organ Heroes</h1>
+    <p>
+        Being an organ donor is a simple choice with a profound impact. Over 100,000 children, women and men wait in desperate hope for our generosity. We have the power to leave a transformative legacy that will carry on well beyond our years, all for a decision that takes only a moment of consideration.
+    </p>
+
+    <div class="row align-items-center benny mt-5 pt-5 pb-5">
+        <div class="col-lg-5 order-md-1">
+            <img src="../../../assets/img/benny/benny_1.png" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-7 order-md-2 content">
+            <div class="d-flex align-items-center h-100">
+                <div>
+                    <h2>Benny's Impact</h2>
+                    <p>
+                        Benny eagerly made the decision to become an organ donor prior to his passing, and the family recieved a letter from The Midwest Transplant Network detailing all the lives Benny has drastically impacted.
+                    </p>
+                    <ul>
+                        <li>Benny's heart saved a 9-year old boy.</li>
+                        <li>Benny's lungs saved an 62-year old gentleman.</li>
+                        <li>Benny's liver saved a 21-year old father.</li>
+                        <li>Benny's kindney saved a 37-year old mother.</li>
+                        <li>Benny's other kidney saved a 36-year old man.</li>
+                        <li>Benny's corneas gave two people sight.</li>
+                        <li>Benny's bones, connective tissues, skin grafts and blood vessels are helping countless other patients.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats">
+    <h2 class="mb-4">Statistics</h2>
+        <div class="row equal-height-row">
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex" *ngFor="let stat of stats">
+            <div class="stat {{stat.class}} flex-fill">
+                <h3>{{ stat.number }}</h3>
+                <p>{{ stat.description }}</p>
+            </div>
+            </div>
+        </div>
+        <p class="small mt-4">Statistics Source: <a href="https://www.organdonor.gov/learn/organ-donation-statistics/detailed-description" target="blank">HSRA</a></p>
+        <div class="think">
+            <h3>What if...</h3>
+            <p>we increased the number of organ donors by just <span>ONE</span> percent?</p>
+        </div>
+    </div>
+
+    <h2>What can be donated?</h2>
+    <p>Generally, many types of organs and parts can be donated including kidneys, liver, heart, lungs, pancreas, intestines, corneas, tissue, stem cells and more. For are more detailed and complete list you can visit <a target="blank" href="https://www.organdonor.gov/learn/what-can-be-donated">HSRA</a>.</p>
+
+    <h2 class="mt-5">Organ Donation Facts</h2>
+    <p>Here are some well known facts to dispel common myths about donating organs.</p>
+    <ul>
+        <li>If you are in an accident the number one priority is to aggressively try to save your life, not collect your organs.</li>
+        <li>The family of the organ donor does not pay to have the organs removed or transplanted.</li>
+        <li>Rich and famous people do not recieve special treatment. Everyone is handled through the sytem equally.</li>
+        <li>You can have a history of medical illness and still be an organ donor.</li>
+        <li>There is no chance that you will be alive when your organs are removed. You will be confirmed brain dead.</li>
+        <li>You are not too old to become a donor.</li>
+        <li>All major religions support and encourage organ donations.</li>
+        <li>You can have an open casket funeral without your organs.</li>
+    </ul>
+    <p class="small">Sources: 
+        <a href="https://www.jeffersonhealth.org/your-health/living-well/facts-and-myths-about-organ-donation" target="blank">Jefferson Health</a>, 
+        <a href="https://www.pennmedicine.org/updates/blogs/transplant-update/2019/march/myths-about-organ-donation" target="blank">Penn Medicine</a>, 
+        <a href="https://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/organ-donation/art-20047529" target="blank">Mayo Clinic</a>,
+        <a href="https://www.cedars-sinai.org/blog/myths-about-organ-donation.html" target="blank">Cedars Sinai</a>
+    </p>
+
+    <div class="how-to-donate">
+        <h2 class="mb-3">How to become a donor</h2>
+        <p>
+            You can easily sign up and register to become a donor through your state of residence.
+        </p>
+        <ul>
+            <li>
+                You can start by visiting the <a target="blank" href="https://www.organdonor.gov/sign-up">HSRA Sign Up Page</a> and selecting your state.
+            </li>
+            <li>
+                You can also register through your local DMV.
+            </li>
+        </ul>
+    </div>
+</div>

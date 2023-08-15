@@ -40,6 +40,7 @@ import { BooksComponent } from './components/workshop/books/books.component';
 import { TeamComponent } from './components/team/team.component';
 import { DigitalComponent } from './components/workshop/digital/digital.component';
 import { CampComponent } from './components/workshop/camp/camp.component';
+import { OrganComponent } from './components/research/organ/organ.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { CampComponent } from './components/workshop/camp/camp.component';
     BooksComponent,
     TeamComponent,
     DigitalComponent,
-    CampComponent
+    CampComponent,
+    OrganComponent
   ],
   imports: [
     BrowserModule,

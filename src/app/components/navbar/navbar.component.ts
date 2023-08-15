@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-    const tabLinks = document.querySelectorAll('.nav-link');
+    const tabLinks = document.querySelectorAll('.click-close');
     const navbarCollapse = document.getElementById('navbarNav');
   
     tabLinks.forEach(tabLink => {
@@ -33,6 +33,6 @@ export class NavbarComponent implements OnInit {
         }
       });
     });
-  }
+}
 
 }

@@ -1,0 +1,70 @@
+.organ {
+    padding-bottom:5em;
+    .benny {
+        img {
+            border-radius:12px;
+        }
+    }
+    .content {
+        padding-left:2em;
+        @media (max-width: 991px) {
+            margin-top:2em;
+            padding-left:1em;
+        }
+    }
+    .stats {
+        margin:4em 0;
+        .stat {
+            border-radius:12px;
+            @media (max-width: 991px) {
+                border-radius:0;
+            }
+            h3 {
+                font-size:4em;
+                font-weight:bold;
+            }
+            color:white;
+            padding:1.5em 3em;
+            &:hover {
+                cursor:pointer;
+                opacity:0.9;
+            }
+            border:1px solid white;
+        }
+        .one {
+            background-color:#ab97db;
+        }
+        .two {
+            background-color:#1EAE98;
+        }
+        .three {
+            background-color:#56adcf;
+        }
+        .four {
+            background-color:#e28a57;
+        }
+    }
+    .think {
+        h3 {
+            font-size:5em;
+        }
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        margin:4em 0;
+        padding:2em 0;
+        border-top:1px solid #d3d3d3;
+        border-bottom:1px solid #d3d3d3;
+        p {
+            font-size:2.5em;
+            span {
+                font-weight:bold;
+                color:#ab97db;
+            }
+        }
+    }
+    .how-to-donate {
+        margin-top:4em;
+        border-top:1px solid #d3d3d3;
+        padding:3em 0;
+    }
+}

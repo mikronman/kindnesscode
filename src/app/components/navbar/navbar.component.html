@@ -10,32 +10,45 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/welcome']">Welcome</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/benny']">Benny</a>
-        </li>
-        <li class="nav-item">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="researchDropdown">
+              <a class="dropdown-item click-close" [routerLink]="['/about/welcome']">About TKCF</a>
+              <a class="dropdown-item click-close" [routerLink]="['/about/team']">The Team</a>
+              <a class="dropdown-item click-close" [routerLink]="['/about/benny']">Benny</a>
+              <a class="dropdown-item click-close" [routerLink]="['/roadmap']">Roadmap</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Programs
+          </a>
+          <div class="dropdown-menu" aria-labelledby="researchDropdown">
+              <a class="dropdown-item click-close" [routerLink]="['/organ']">Organ Donor Awareness</a>
+              <a class="dropdown-item click-close" [routerLink]="['/workshop']">Workshop</a>
+          </div>
+      </li>
+      <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Research
+          </a>
+          <div class="dropdown-menu" aria-labelledby="researchDropdown">
+          </div>
+      </li> -->
+        <li class="nav-item click-close">
             <a class="nav-link" [routerLink]="['/blog']">Blog</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/workshop']">Workshop</a>
+        <li class="nav-item click-close">
+            <a class="nav-link" [routerLink]="['/events']">Events</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/roadmap']">Roadmap</a>
+        <li class="nav-item click-close">
+            <a class="nav-link subscribe" [routerLink]="['/subscribe']">Join Us!</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/team']">Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/events']">Events</a>
-       </li>
-        <li class="nav-item">
-          <a class="nav-link subscribe" [routerLink]="['/subscribe']">Join Us!</a>
-      </li>
-      </ul>
-  </div>
+    </ul>
+</div>
+
 </nav>
   
