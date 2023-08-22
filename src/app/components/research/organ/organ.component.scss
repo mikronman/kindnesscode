@@ -45,17 +45,18 @@
         }
     }
     .think {
-        h3 {
+        .think-h {
             font-size:5em;
+            font-family: 'Caveat', cursive;
         }
-        font-family: 'Caveat', cursive;
         text-align: center;
         margin:4em 0;
         padding:2em 0;
         border-top:1px solid #d3d3d3;
         border-bottom:1px solid #d3d3d3;
-        p {
+        .think-p {
             font-size:2.5em;
+            font-family: 'Caveat', cursive;
             span {
                 font-weight:bold;
                 color:#ab97db;
