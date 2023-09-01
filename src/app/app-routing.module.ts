@@ -9,8 +9,8 @@ import { TeamComponent } from './components/team/team.component';
 import { OrganComponent } from './components/research/organ/organ.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'about/welcome', pathMatch: 'full' },
-  { path: 'about/welcome', component: WelcomeComponent },
+  { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+  { path: 'welcome', component: WelcomeComponent },
   { path: 'about/benny', component: BennyComponent },
   { path: 'subscribe', component: SubscribeComponent },
   { path: 'roadmap', component: RoadmapComponent },
