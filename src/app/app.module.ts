@@ -41,6 +41,7 @@ import { TeamComponent } from './components/team/team.component';
 import { DigitalComponent } from './components/workshop/digital/digital.component';
 import { CampComponent } from './components/workshop/camp/camp.component';
 import { OrganComponent } from './components/research/organ/organ.component';
+import { CodeFreedomComponent } from './programs/code-freedom/code-freedom.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { OrganComponent } from './components/research/organ/organ.component';
     TeamComponent,
     DigitalComponent,
     CampComponent,
-    OrganComponent
+    OrganComponent,
+    CodeFreedomComponent
   ],
   imports: [
     BrowserModule,
